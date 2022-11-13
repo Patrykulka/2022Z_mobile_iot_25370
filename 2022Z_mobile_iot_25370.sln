@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31611.283
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "mobile_iot_lab01", "mobile_iot_lab01\mobile_iot_lab01.csproj", "{D6D5B4C9-E53F-4AAA-B78A-C1F8354FB5FC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pierwsza aplikacja multiplatformowa", "Pierwsza aplikacja multiplatformowa\Pierwsza aplikacja multiplatformowa.csproj", "{3D8A7D94-CBA5-4E58-B84E-862C8CFA56BF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,6 +19,12 @@ Global
 		{D6D5B4C9-E53F-4AAA-B78A-C1F8354FB5FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D6D5B4C9-E53F-4AAA-B78A-C1F8354FB5FC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D6D5B4C9-E53F-4AAA-B78A-C1F8354FB5FC}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{3D8A7D94-CBA5-4E58-B84E-862C8CFA56BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D8A7D94-CBA5-4E58-B84E-862C8CFA56BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D8A7D94-CBA5-4E58-B84E-862C8CFA56BF}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{3D8A7D94-CBA5-4E58-B84E-862C8CFA56BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D8A7D94-CBA5-4E58-B84E-862C8CFA56BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D8A7D94-CBA5-4E58-B84E-862C8CFA56BF}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
