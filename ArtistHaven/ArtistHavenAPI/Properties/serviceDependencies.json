@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "type": "mssql",
+      "connectionId": "ConnectionStrings:ArtistHavenAPIContext"
+    },
+    "storage1": {
+      "type": "storage",
+      "connectionId": "AZURE_STORAGEBLOB_CONNECTIONSTRING",
+      "dynamicId": null
+    }
+  }
+}

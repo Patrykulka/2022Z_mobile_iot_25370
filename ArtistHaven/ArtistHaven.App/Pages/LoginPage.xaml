@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ArtistHaven.App.Pages.LoginPage"
+             Title="LoginPage">
+    <VerticalStackLayout VerticalOptions="Center">
+        <Label Text="E-Mail" VerticalOptions="Center" HorizontalOptions="Center"/>
+        <Border>
+            <Entry x:Name="EMailEntry"/>
+        </Border>
+        <Label Text="Password" VerticalOptions="Center" HorizontalOptions="Center"/>
+        <Border>
+            <Entry x:Name="PasswordEntry" IsPassword="True"/>
+        </Border>
+        <Border>
+            <Button x:Name="SignInButton" Text="Log in" Clicked="LoginButtonClicked"/>
+        </Border>
+    </VerticalStackLayout>
+</ContentPage>

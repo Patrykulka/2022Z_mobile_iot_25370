@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ArtistHaven.App.Pages.SearchUsersPage"
+             Title="Find users"
+             xmlns:viewmodels="clr-namespace:ArtistHaven.App.ViewModels">
+    <VerticalStackLayout>
+        <SearchBar x:Name="searchBar"
+                   SearchCommand="{Binding PerformSearch}"
+                   SearchCommandParameter="{Binding Text, Source={x:Reference searchBar}}"/>
+        <ListView x:Name="searchResults" ItemsSource="{Binding SearchResults}" ItemSelected="searchResults_ItemSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Label Text="{Binding UserName}" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </VerticalStackLayout>
+</ContentPage>

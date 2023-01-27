@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ArtistHaven.App.Pages.SubscriptionTierPage"
+             Title="SubscriptionTierPage">
+    <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="VerticalTextAlignment" Value="Center"/>
+        </Style>
+    </ContentPage.Resources>
+    <VerticalStackLayout>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="80"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="40"/>
+            </Grid.RowDefinitions>
+            <Label Text="Name" Margin="10, 0, 0, 0"/>
+            <Entry x:Name="NameEntry" Text="{Binding Name}" Grid.Column="1"/>
+            <Label Text="Description" Margin="10, 0, 0, 0" Grid.Row="1" VerticalTextAlignment="Start"/>
+            <Editor x:Name="DescriptionEditor" Text="{Binding Description}" Grid.Row="1" Grid.Column="1" AutoSize="TextChanges"/>
+            <Label Text="Price" Margin="10, 0, 0, 0" Grid.Row="2"/>
+            <Entry x:Name="PriceEntry" Text="{Binding Price}" Grid.Row="2" Grid.Column="1"/>
+            <Label Text="Power" Margin="10, 0, 0, 0" Grid.Row="3"/>
+            <Entry x:Name="PowerEntry" Text="{Binding Power}" Grid.Row="3" Grid.Column="1"/>
+
+            <Button Text="Save" Clicked="SaveButtonClicked" BackgroundColor="Green" Grid.Row="5" Grid.Column="1"/>
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>

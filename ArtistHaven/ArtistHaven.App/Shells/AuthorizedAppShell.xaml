@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="ArtistHaven.App.Shells.AuthorizedAppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:ArtistHaven.App"
+    xmlns:pages="clr-namespace:ArtistHaven.App.Pages"
+    Shell.FlyoutBehavior="Disabled">
+
+    <TabBar>
+        <Tab Title="Subscriptions">
+            <ShellContent ContentTemplate="{DataTemplate pages:SubscriptionsPage}"/>
+        </Tab>
+        <Tab Title="Search">
+            <ShellContent ContentTemplate="{DataTemplate pages:SearchUsersPage}"/>
+        </Tab>
+        <Tab Title="Add post">
+            <ShellContent ContentTemplate="{DataTemplate pages:AddPostPage}"/>
+        </Tab>
+        <Tab Title="Posts">
+            <ShellContent ContentTemplate="{DataTemplate pages:CurrentUserPosts}"/>
+        </Tab>
+        <Tab Title="Profile">
+            <ShellContent ContentTemplate="{DataTemplate pages:CurrentUserPage}"/>
+        </Tab>
+    </TabBar>
+
+</Shell>
